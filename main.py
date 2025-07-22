@@ -1,7 +1,9 @@
-from graph import create_graph
+from config.graph import create_graph
+
+repository_location = "../friendly-bot"
 
 if __name__ == "__main__":
     app = create_graph()
-    result = app.invoke({"ruta": "../friendly-bot"})
+    result = app.invoke({"route": repository_location})
     print(result)
     print("README.md generado exitosamente.")
